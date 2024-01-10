@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,4 +16,9 @@ public class HexadecagonterTest {
 
 
     @Test
+    public void testCalcArea(){
+        double actual = hexadecagonter.calcArea_30();
+        double expected = 18068.65;
+        Assert.assertEquals(actual, expected,0.1);
+    }
 }
