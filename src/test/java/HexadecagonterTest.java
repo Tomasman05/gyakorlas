@@ -16,9 +16,9 @@ public class HexadecagonterTest {
 
 
     @Test
-    public void testCalcArea(){
-        double actual = hexadecagonter.calcArea_30();
-        double expected = 18068.65;
+    public void testCalcArea_30(){
+        double actual = hexadecagonter.calcArea(30);
+        double expected = 18098.422;
         Assert.assertEquals(actual, expected,0.1);
     }
 }
